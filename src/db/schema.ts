@@ -22,6 +22,11 @@ export const initializeSchema = async () => {
         happiness INT DEFAULT 50,
         energy INT DEFAULT 50,
         mood VARCHAR(50) DEFAULT 'neutral',
+        last_interaction_at TIMESTAMP,
+        last_fed_at TIMESTAMP,
+        last_played_at TIMESTAMP,
+        last_talked_at TIMESTAMP,
+        last_petted_at TIMESTAMP,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (server_id) REFERENCES servers(server_id) ON DELETE CASCADE
