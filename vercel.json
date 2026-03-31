@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "other",
+  "framework": "node",
   "functions": {
     "src/api/**/*.ts": {
       "runtime": "nodejs20.x"
