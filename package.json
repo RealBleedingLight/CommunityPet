@@ -11,7 +11,7 @@
     "build": "tsc",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "start": "node dist/bot/index.js"
+    "start": "tsx dist/bot/index.js"
   },
   "keywords": [
     "discord",
